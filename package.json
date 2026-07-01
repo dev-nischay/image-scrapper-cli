@@ -1,0 +1,34 @@
+{
+  "name": "image-scrapper-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "imagescrapper",
+  "bin": {
+    "imgscrape": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scrape": "tsc && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.5.2",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "ora": "^9.4.1",
+    "playwright": "^1.61.1",
+    "yargs": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "@types/yargs": "^17.0.35",
+    "typescript": "^6.0.3"
+  }
+}
